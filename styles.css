@@ -106,9 +106,8 @@ header {
 
 main {
   width: 100%;
-  min-height: 700px;
+  min-height: 70rem;
   height: 100%;
-
   padding: 5rem 5rem;
   .container {
     width: 100%;
@@ -227,6 +226,37 @@ footer {
             color: var(--azul-e);
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media (max-width: 860px) {
+  html {
+    font-size: 55%;
+  }
+
+  main {
+    .container {
+      display: flex;
+      flex-direction: column;
+
+      img {
+        max-width: 30rem;
+        max-height: 30rem;
+      }
+
+      .text-box {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
     }
   }
