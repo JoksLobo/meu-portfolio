@@ -6,13 +6,14 @@
   --azul-c: #b0c4de;
   --branco: #fff;
   --borda: 1px solid #000;
+  --borda2: 1px solid #4a90e2;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: var(--rosa);
+  color: var(--branco);
 }
 
 html {
@@ -23,8 +24,6 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   line-height: 1.2;
-  width: 100vw;
-  height: 100vh;
   background: #300957;
   background: linear-gradient(
     180deg,
@@ -32,6 +31,7 @@ body {
     rgba(90, 43, 171, 1) 79%,
     rgba(178, 66, 207, 1) 100%
   );
+  background-repeat: no-repeat;
 }
 
 header {
@@ -98,7 +98,7 @@ header {
       transition: all 0.5s ease;
 
       &:hover {
-        color: var(--azul-c);
+        color: var(--rosa);
       }
     }
   }
@@ -106,7 +106,10 @@ header {
 
 main {
   width: 100%;
-  padding: 10rem 5rem;
+  min-height: 700px;
+  height: 100%;
+
+  padding: 5rem 5rem;
   .container {
     width: 100%;
     display: flex;
@@ -181,10 +184,47 @@ main {
           }
         }
         .blue {
-          background: var(--azul-c);
+          background: var(--rosa);
           transition: all 0.3s ease-in-out;
           &:hover {
             background: transparent;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer {
+  height: 14.2rem;
+  border-top: var(--borda2);
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3rem;
+    width: 100%;
+    height: 100%;
+
+    .phone-box,
+    .email-box,
+    .social-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .social-box {
+      .icons {
+        padding: 0.2rem;
+
+        i {
+          font-size: 2.5rem;
+          transition: 0.3s ease-in-out;
+          &:hover {
+            color: var(--azul-e);
           }
         }
       }
