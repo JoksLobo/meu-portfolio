@@ -47,6 +47,7 @@ header {
   align-items: center;
   gap: 1.2rem;
   text-decoration: none;
+  transition: all 0.5s ease-in-out;
 
   .circle {
     height: 2.5rem;
@@ -61,6 +62,43 @@ header {
     & span {
       font-size: 1.6rem;
       font-weight: 300;
+    }
+  }
+
+  &:hover {
+    .circle {
+      background: var(--azul-e);
+    }
+
+    h1 {
+      color: #ff5c00;
+
+      span {
+        color: var(--laranja);
+      }
+    }
+  }
+}
+
+.links-box {
+  .links {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+
+    .bar {
+      width: 0.1rem;
+      height: 2.5rem;
+      background: var(--azul-e);
+    }
+
+    & a {
+      text-decoration: none;
+      transition: all 0.5s ease;
+
+      &:hover {
+        color: var(--laranja);
+      }
     }
   }
 }
