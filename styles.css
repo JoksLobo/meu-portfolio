@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  width: 100vw;
+  height: 100vh;
+  background: #300957;
+  background: linear-gradient(
+    180deg,
+    rgba(48, 9, 87, 1) 0%,
+    rgba(90, 43, 171, 1) 79%,
+    rgba(178, 66, 207, 1) 100%
+  );
+}
+
+:root {
+  --roxo: #8e44ad;
+  --rosa: #ff77a0;
+  --laranja: #ff5c00;
+  --azul-e: #4a90e2;
+  --azul-c: #b0c4de;
+  --branco: #fff: ;
+}
+
+main {
+}
