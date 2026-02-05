@@ -61,11 +61,12 @@ function creatProjetctCard(project) {
             <a href="${project.link}" target="_blank">Visite!</a>
           </div>
           <div>
+          <a href="${project.link}" target="_blank">
             <img
               src="${project.image}"
               alt="imagem do projeto"
               class="projeto-img"
-            />
+            /></a>
           </div>
         </div>
   `;
