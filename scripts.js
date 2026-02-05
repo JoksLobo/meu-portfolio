@@ -81,7 +81,7 @@ function creatProjetctCard(project) {
             </p>
             <a href="${project.link}" target="_blank">Visite!</a>
           </div>
-          <div>
+          <div class='img-box-card'>
           <a href="${project.link}" target="_blank">
             <img
               src="${project.image}"

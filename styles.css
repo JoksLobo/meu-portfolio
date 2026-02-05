@@ -150,6 +150,7 @@ main {
           flex-direction: column;
           gap: 2rem;
           word-wrap: break-word;
+          max-width: 40rem;
 
           h2 {
             font-size: 2.6rem;
@@ -168,21 +169,24 @@ main {
           }
         }
 
-        img {
-          max-width: 40rem;
-          max-height: 40rem;
-          width: 100%;
-          height: 100%;
-          border-radius: 0.5rem;
-          object-fit: cover;
+        .img-box-card {
           cursor: pointer;
           transition: 0.3s ease-in-out;
           box-shadow: 1px 6px 12px -2px rgba(0, 0, 0, 0.66);
           -webkit-box-shadow: 1px 6px 12px -2px rgba(0, 0, 0, 0.66);
           -moz-box-shadow: 1px 6px 12px -2px rgba(0, 0, 0, 0.66);
+          max-width: 40rem;
+          max-height: 40rem;
 
           &:hover {
             transform: scale(1.1);
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 0.5rem;
+            object-fit: cover;
           }
         }
       }
@@ -426,6 +430,15 @@ footer {
   }
   main {
     .container {
+      .projetos-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .text-box-card {
+          margin-bottom: 1rem;
+        }
+      }
       .experiencia {
         padding: 2rem;
       }
