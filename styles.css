@@ -127,6 +127,10 @@ main {
       }
     }
 
+    &.projetos {
+      flex-direction: column;
+    }
+
     img {
       max-width: 40rem;
       max-height: 40rem;
@@ -245,6 +249,8 @@ main {
         }
       }
     }
+
+    /* projetos */
   }
 }
 
