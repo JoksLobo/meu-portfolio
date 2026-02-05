@@ -136,8 +136,9 @@ main {
         max-width: 110rem;
         width: 100%;
         display: flex;
-        padding: 5rem;
         justify-content: space-between;
+        padding: 5rem;
+        gap: 0.3rem;
         border: var(--borda2);
         border-radius: 0.5rem;
         box-shadow: 1px 6px 12px -2px rgba(0, 0, 0, 0.66);
@@ -148,6 +149,7 @@ main {
           display: flex;
           flex-direction: column;
           gap: 2rem;
+          word-wrap: break-word;
 
           h2 {
             font-size: 2.6rem;
@@ -175,6 +177,9 @@ main {
           object-fit: cover;
           cursor: pointer;
           transition: 0.3s ease-in-out;
+          box-shadow: 1px 6px 12px -2px rgba(0, 0, 0, 0.66);
+          -webkit-box-shadow: 1px 6px 12px -2px rgba(0, 0, 0, 0.66);
+          -moz-box-shadow: 1px 6px 12px -2px rgba(0, 0, 0, 0.66);
 
           &:hover {
             transform: scale(1.1);

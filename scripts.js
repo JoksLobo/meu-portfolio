@@ -1,5 +1,26 @@
 const project = [
   {
+    title: "App de Previsão de Tempo",
+    description:
+      "App de previsão do tempo com API da Open Weather com busca em comando de voz.",
+    image: "./src/projetos-imgs/app-previsao.png",
+    link: "https://app-previsao-tempo-rose.vercel.app/",
+  },
+  {
+    title: "Mostruário de estilos de botões e cards",
+    description:
+      "Botões e cards em estilo neon e glass (vidro) utilizando CSS.",
+    image: "./src/projetos-imgs/botao-neon.png",
+    link: "https://botao-neon.vercel.app/",
+  },
+  {
+    title: "Gerador de box-Shadow",
+    description:
+      "App que gera box shadow com opacidade, deslocamento e blur utilizando CSS e JavaScript.",
+    image: "./src/projetos-imgs/gerador-box-shadow.png",
+    link: "https://gerador-de-box-shadow-black.vercel.app/",
+  },
+  {
     title: "Landing Page com Tailwind",
     description:
       "Landing Page responsiva com tema dark/light usando o tailwind.",
