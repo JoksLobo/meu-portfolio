@@ -109,3 +109,11 @@ function renderProjects(project) {
 document.addEventListener("DOMContentLoaded", () => {
   renderProjects(project);
 });
+
+const menu = document.getElementById("menu");
+
+menu.addEventListener("click", () => {
+  menu.classList.toggle("active");
+  const options = document.getElementById("options");
+  options.classList.toggle("active");
+});

@@ -41,6 +41,77 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 3.5rem;
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  opacity: 0;
+
+  &.active {
+    .bar {
+      background-color: var(--rosa);
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(0.5rem, 0.5rem);
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(0.5rem, -0.5rem);
+      }
+    }
+  }
+
+  .bar {
+    width: 2.5rem;
+    height: 0.2rem;
+    background: var(--branco);
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+.options {
+  position: absolute;
+  top: 7.6rem;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgba(48, 9, 87, 1) 0%,
+    rgba(90, 43, 171, 1) 79%,
+    rgba(178, 66, 207, 1) 100%
+  );
+  opacity: 0;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+
+  &.active {
+    opacity: 1;
+  }
+
+  .links {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    cursor: pointer;
+
+    a {
+      text-decoration: none;
+    }
+  }
 }
 
 .title-box {
@@ -82,6 +153,8 @@ header {
 }
 
 .links-box {
+  display: flex;
+  align-items: center;
   .links {
     display: flex;
     gap: 1.2rem;
@@ -514,6 +587,17 @@ footer {
   html {
     font-size: 45%;
   }
+
+  header {
+    .links-box {
+      display: none;
+    }
+
+    .menu {
+      opacity: 1;
+    }
+  }
+
   main {
     .container {
       &.curriculo {
