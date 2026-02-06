@@ -90,12 +90,12 @@ header {
     rgba(90, 43, 171, 1) 79%,
     rgba(178, 66, 207, 1) 100%
   );
-  opacity: 0;
+  display: none;
   z-index: 1;
   transition: all 0.5s ease-in-out;
 
   &.active {
-    opacity: 1;
+    display: block;
   }
 
   .links {
