@@ -95,6 +95,7 @@ function creatProjetctCard(project) {
               src="${project.image}"
               alt="imagem do projeto"
               class="projeto-img"
+              loading="lazy"
             /></a>
           </div>
         </div>
