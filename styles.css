@@ -270,6 +270,13 @@ main {
           }
         }
       }
+
+      .icons {
+        font-size: 4rem;
+        display: flex;
+        justify-content: flex-start;
+        gap: 1rem;
+      }
     }
 
     /* curriculo */
