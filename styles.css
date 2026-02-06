@@ -498,6 +498,7 @@ footer {
       .experiencia {
         flex-direction: column;
         align-items: center;
+        text-align: center;
 
         ul.skills {
           align-items: center;
