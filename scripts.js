@@ -70,6 +70,14 @@ const project = [
 
 const div = document.getElementById("projetos");
 
+function createTitle() {
+  return `<h1>Projetos</h1>`;
+}
+
+function renderTitle() {
+  div.innerHTML = createTitle();
+}
+
 function creatProjetctCard(project) {
   return `
   
@@ -94,7 +102,7 @@ function creatProjetctCard(project) {
 }
 
 function renderProjects(project) {
-  div.innerHTML = project.map(creatProjetctCard).join("");
+  div.innerHTML = createTitle() + project.map(creatProjetctCard).join("");
 }
 
 document.addEventListener("DOMContentLoaded", () => {
