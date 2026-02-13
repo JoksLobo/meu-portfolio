@@ -1,5 +1,12 @@
 const project = [
   {
+    title: "Simulador de Dado",
+    description:
+      "Site que simula um dado d6 utilizando animações em css e JavaScript.",
+    image: "./src/projetos-imgs/simulador-dado.png",
+    link: "https://simulador-de-dado.vercel.app/",
+  },
+  {
     title: "App de Previsão de Tempo",
     description:
       "App de previsão do tempo com API da Open Weather com busca em comando de voz.",
